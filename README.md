@@ -1,26 +1,35 @@
-# dairylac
-
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+You Can find the database design in [ERD File](erd.pdf) in root folder of application.
 
-Things you may want to cover:
+To see the table please find schema file in [Schema](db/schema.rb)
 
-* Ruby version
 
-* System dependencies
 
-* Configuration
+## Installation If Needed
 
-* Database creation
+Install Ruby with RVM
 
-* Database initialization
+`rvm install 2.5.1`
 
-* How to run the test suite
+`rvm use 2.5.1 --default`
 
-* Services (job queues, cache servers, search engines, etc.)
+Install Postres with homebrew
 
-* Deployment instructions
+`brew install postgresql`
 
-* ...
+Install Bundler
+
+`gem install bundler`
+
+Now you can install gems and setup the DB
+
+```
+bundle install
+rails db:setup
+```
+
+Start your server
+
+`rails s`
+
